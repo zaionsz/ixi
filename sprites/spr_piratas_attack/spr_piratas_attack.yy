@@ -39,7 +39,7 @@
     "name": "spr_piratas_attack",
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 6.0,
+    "playbackSpeed": 4.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -74,7 +74,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Inimigos",
+    "path": "folders/Sprites/Inimigos.yy",
   },
 }
