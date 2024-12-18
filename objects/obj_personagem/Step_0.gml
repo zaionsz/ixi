@@ -1,3 +1,7 @@
+//ajustando minha profundidade
+depth = -y
+
+
 //pegando os inputs do usuário
 up		 = keyboard_check(ord("W"))
 down	 = keyboard_check(ord("S"))

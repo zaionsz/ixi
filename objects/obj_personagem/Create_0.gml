@@ -80,6 +80,13 @@ estado_walk.roda = function()
 	{
 		troca_estado(estado_idle)	
 	}
+	
+	//indo para o estado de attack
+	if (attack)
+	{
+		troca_estado(estado_attack)	
+	}
+	
 
 }
 
@@ -91,9 +98,23 @@ estado_walk.roda = function()
 estado_attack.inicia = function ()
 {
 	//definindo  a sprite dele
-	sprite_index = spr_personagem_attack_side
+	sprite_index = define_sprite(dir, spr_personagem_attack_side, spr_personagem_attack_front, spr_personagem_attack_back)
 	
 	image_index = 0
+	
+	velv = 0
+	velh = 0
+}
+//configurando o estado de attack
+estado_attack.roda = function ()
+{
+
+	//saindo do attack	quando ele acabar
+	if (image_index >= image_number - 0.2)
+	{
+		//indo pro estado de parado
+		troca_estado(estado_idle)
+	}
 }
 
 

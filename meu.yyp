@@ -5,6 +5,7 @@
   "resources": [
     {"id":{"name":"spr_personagem_idle_back","path":"sprites/spr_personagem_idle_back/spr_personagem_idle_back.yy",},"order":0,},
     {"id":{"name":"spr_personagem_attack_front","path":"sprites/spr_personagem_attack_front/spr_personagem_attack_front.yy",},"order":0,},
+    {"id":{"name":"spr_tree","path":"sprites/spr_tree/spr_tree.yy",},"order":0,},
     {"id":{"name":"spr_tileset","path":"sprites/spr_tileset/spr_tileset.yy",},"order":0,},
     {"id":{"name":"spr_personagem_attack_side","path":"sprites/spr_personagem_attack_side/spr_personagem_attack_side.yy",},"order":2,},
     {"id":{"name":"spr_personagem_walk_back","path":"sprites/spr_personagem_walk_back/spr_personagem_walk_back.yy",},"order":1,},
@@ -60,6 +61,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"idle","folderPath":"folders/Sprites/Player/idle.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"walk","folderPath":"folders/Sprites/Player/walk.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"attack","folderPath":"folders/Sprites/Player/attack.yy","order":2,},
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Level","folderPath":"folders/Sprites/Level.yy","order":3,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},
