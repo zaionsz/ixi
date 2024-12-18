@@ -9,6 +9,9 @@ estado_move = new estado()
 //meu estado idle precisa de um inicia
 estado_idle.inicia = function()
 {
+	//definindo a sprite conforme a direção
+	var _sprite = spr_personagem_idle
+	
 	//ajustando a sprite
 	sprite_index = spr_personagem_idle
 	
@@ -53,7 +56,7 @@ estado_move.roda = function()
 
 #endregion
 
-
+#region variaveis
 //controles estão sendo iniciados sem valor
 
 up = noone;
@@ -69,7 +72,10 @@ velv = 0;
 //velocidade do jogador
 vel = 2;
 
+//controlando a direção em que o player ta olhando
+dir 0;
 
+#endregion
 
 //iniciando minha maquina de estados
 inicia_estado(estado_idle)
