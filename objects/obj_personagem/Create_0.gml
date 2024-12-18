@@ -73,7 +73,7 @@ velv = 0;
 vel = 2;
 
 //controlando a direção em que o player ta olhando
-dir 0;
+dir = 0;
 
 #endregion
 
