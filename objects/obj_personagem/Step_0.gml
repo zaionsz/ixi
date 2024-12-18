@@ -11,7 +11,3 @@ velh = (right - left) * vel
 
 //rodando a minha maquina de estados
 roda_estado()
-
-
-
-
