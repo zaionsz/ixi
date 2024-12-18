@@ -38,3 +38,5 @@ function troca_estado(_estado)
 	//iniciando o proximo estado
 	estado_atual.inicia()
 }
+
+//chuppa meu cu
