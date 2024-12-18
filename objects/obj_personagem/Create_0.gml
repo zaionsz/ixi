@@ -16,6 +16,8 @@ estado_idle.inicia = function()
 	image_index = 0
 }
 
+//teste do commit no git
+
 estado_idle.roda = function()
 {
 	//achando a condição para eu sair desse estado
