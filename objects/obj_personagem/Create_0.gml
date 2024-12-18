@@ -5,6 +5,9 @@ estado_idle= new estado();
 //iniciando o estado move
 estado_walk = new estado()
 
+//iniciando o estado de attack
+estado_attack = new estado()
+
 #region estado_idle
 //meu estado idle precisa de um inicia
 estado_idle.inicia = function()
@@ -26,6 +29,12 @@ estado_idle.roda = function()
 	if (up xor down or right xor left)
 	{
 		troca_estado(estado_walk)	
+	}
+	
+	 //condicao para ir pro estado de attack
+	 if (attack)
+	{
+		troca_estado(estado_attack)
 	}
 	
 }
@@ -77,6 +86,21 @@ estado_walk.roda = function()
 
 #endregion
 
+#region estado_attack
+
+estado_attack.inicia = function ()
+{
+	//definindo  a sprite dele
+	sprite_index = spr_personagem_attack_side
+	
+	image_index = 0
+}
+
+
+
+#endregion
+
+
 #region variaveis
 //controles estão sendo iniciados sem valor
 
@@ -84,6 +108,7 @@ up = noone;
 down = noone;
 right = noone;
 left = noone;
+attack = noone;
 
 //variaveis de movimento
 //iniciando parado
