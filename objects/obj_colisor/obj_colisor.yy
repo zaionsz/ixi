@@ -24,7 +24,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"obj_cenario","path":"objects/obj_cenario/obj_cenario.yy",},},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
