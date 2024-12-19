@@ -11,6 +11,12 @@ estado_death	= new estado();
 estado_hurt		= new estado();
 estado_hunt		= new estado();
 
+//teste
+//teste
+//teste
+//teste
+//teste
+
 // iniciando estado idle por parão
 inicia_estado(estado_idle);
 
