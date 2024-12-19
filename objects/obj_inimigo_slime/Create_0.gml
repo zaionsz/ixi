@@ -27,6 +27,8 @@ estado_idle.inicia = function()
 	image_index = 0;
 	
 	timer_estado = tempo_estado;
+	
+	image_blend = c_white;
 }
 
 estado_idle.roda = function()
@@ -61,6 +63,9 @@ estado_move.inicia = function()
 	//Escolhendo aleatoriamente para onde ele deve ir
 	destino_x = irandom(room_width);
 	destino_y = irandom(room_height);
+	
+	//Definindo o xscale pelo destino x
+	xscale = sign(destino_x - x);
 }
 
 estado_move.roda = function()
@@ -97,6 +102,11 @@ estado_attack.roda = function()
 	{
 		troca_estado(estado_idle);
 	}
+}
+
+estado_attack.finaliza = function()
+{
+	alvo = noone;
 }
 
 #endregion
@@ -183,8 +193,43 @@ estado_hunt.roda = function()
 		troca_estado(estado_attack);
 	}
 	
-}
+	xscale = sign(alvo.x - x);
 	
+	//Pedindo ajuda pros amigos
+	//Checar quem ta pulando na bala
+	var _n = instance_number(object_index);
+	//Passando por todos os objetos iguais a mim
+	for (var i = 0; i < _n; i++)
+	{
+		//Checando se eu n estou olhando para mim mesmo
+		var _slime = instance_find(object_index, i);
+		show_debug_message("bug");
+		if(_slime == id)
+		{
+			//Faz nada nao pq esse sou eu
+		}
+		else
+		{
+			//Verifica se o cara n esta ainda perseguindo o alvo
+			if(_slime.alvo != alvo)
+			{
+				
+				
+				//Checando quem esta proximo do slime
+				var _dist = point_distance(x,y, _slime.x, _slime.y);
+				if (_dist < 100)
+				{
+					//AJUDA!!!!
+					with(_slime)
+					{
+						troca_estado(estado_hunt);
+					}
+				}
+			}
+		}
+	}
+}
+		
 #endregion
 
 

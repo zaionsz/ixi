@@ -1,6 +1,6 @@
 
 //Iniciando as variaveis para todos os inimigos
-
+xscale=1;
 
 // Iniciando os estados padrão dos inimigos
 
