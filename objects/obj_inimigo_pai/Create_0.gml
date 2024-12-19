@@ -1,8 +1,6 @@
-/// @description Inserir descrição aqui
-// Você pode escrever seu código neste editor
 
 //Iniciando as variaveis para todos os inimigos
-
+xscale=1;
 
 // Iniciando os estados padrão dos inimigos
 
