@@ -1,0 +1,20 @@
+{
+  "FolderOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_colisor","order":1,"path":"objects/obj_colisor/obj_colisor.yy",},
+    {"name":"obj_dano_personagem","order":4,"path":"objects/obj_dano_personagem/obj_dano_personagem.yy",},
+    {"name":"obj_inimigo_pai","order":3,"path":"objects/obj_inimigo_pai/obj_inimigo_pai.yy",},
+    {"name":"obj_inimigo_slime","order":2,"path":"objects/obj_inimigo_slime/obj_inimigo_slime.yy",},
+    {"name":"spr_dano","order":5,"path":"sprites/spr_dano/spr_dano.yy",},
+    {"name":"spr_personagem_attack_back","order":1,"path":"sprites/spr_personagem_attack_back/spr_personagem_attack_back.yy",},
+    {"name":"spr_personagem_attack_side","order":2,"path":"sprites/spr_personagem_attack_side/spr_personagem_attack_side.yy",},
+    {"name":"spr_personagem_idle_front","order":1,"path":"sprites/spr_personagem_idle_front/spr_personagem_idle_front.yy",},
+    {"name":"spr_personagem_idle_side","order":2,"path":"sprites/spr_personagem_idle_side/spr_personagem_idle_side.yy",},
+    {"name":"spr_personagem_walk_back","order":1,"path":"sprites/spr_personagem_walk_back/spr_personagem_walk_back.yy",},
+    {"name":"spr_personagem_walk_side","order":2,"path":"sprites/spr_personagem_walk_side/spr_personagem_walk_side.yy",},
+    {"name":"spr_slime_attack","order":2,"path":"sprites/spr_slime_attack/spr_slime_attack.yy",},
+    {"name":"spr_slime_death","order":3,"path":"sprites/spr_slime_death/spr_slime_death.yy",},
+    {"name":"spr_slime_hurt","order":1,"path":"sprites/spr_slime_hurt/spr_slime_hurt.yy",},
+    {"name":"spr_slime_walk","order":4,"path":"sprites/spr_slime_walk/spr_slime_walk.yy",},
+  ],
+}

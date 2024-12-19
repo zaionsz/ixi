@@ -1,4 +1,6 @@
 
+meu_dano = noone
+
 //iniciando meu primeiro estado
 estado_idle= new estado();
 
@@ -104,6 +106,14 @@ estado_attack.inicia = function ()
 	
 	velv = 0
 	velh = 0
+	
+	
+	//criando o meu dano
+	
+	var _x = x + lengthdir_x(16, dir * 90)
+	var _y = y + lengthdir_y(16, dir * 90)
+	
+	meu_dano = instance_create_depth(_x, _y, depth, obj_dano_personagem)
 }
 //configurando o estado de attack
 estado_attack.roda = function ()
@@ -115,6 +125,12 @@ estado_attack.roda = function ()
 		//indo pro estado de parado
 		troca_estado(estado_idle)
 	}
+}
+
+estado_attack.finaliza = function ()
+{
+	//encerro meu dano
+	instance_destroy(meu_dano)
 }
 
 
