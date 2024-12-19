@@ -68,7 +68,7 @@ estado_walk.roda = function()
 		image_xscale = sign(velh)
 	}	
 	
-	//definindo a spritw
+	//definindo a sprit
 	sprite_index = define_sprite(dir, spr_personagem_walk_side, spr_personagem_walk_front, spr_personagem_walk_back)
 	
 	
@@ -153,7 +153,7 @@ velh = 0;
 velv = 0;
 
 //velocidade do jogador
-vel = 1.5;
+vel = 1.75;
 
 //controlando a direção em que o player ta olhando
 dir = 0;
