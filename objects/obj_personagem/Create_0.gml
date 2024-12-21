@@ -1,21 +1,21 @@
 
-meu_dano = noone
+meu_dano = noone;
 
 //iniciando meu primeiro estado
 estado_idle= new estado();
 
 //iniciando o estado move
-estado_walk = new estado()
+estado_walk = new estado();
 
 //iniciando o estado de attack
-estado_attack = new estado()
+estado_attack = new estado();
 
 #region estado_idle
 //meu estado idle precisa de um inicia
 estado_idle.inicia = function()
 {
 	//definindo a sprite conforme a direção
-	var _sprite = define_sprite(dir, spr_personagem_idle_side, spr_personagem_idle_front, spr_personagem_idle_back)
+	var _sprite = define_sprite(dir, spr_personagem_idle_side, spr_personagem_idle_front, spr_personagem_idle_back);
 	
 	//ajustando a sprite
 	sprite_index = _sprite
@@ -28,9 +28,9 @@ estado_idle.roda = function()
 {
 	//achando a condição para eu sair desse estado
 	//se eu estiver em movimento, entao eu vou para o estado walk
-	if (up xor down or right xor left)
+	if (up xor down or left xor right)
 	{
-		troca_estado(estado_walk)	
+		troca_estado(estado_walk);
 	}
 	
 	 //condicao para ir pro estado de attack
@@ -45,12 +45,12 @@ estado_idle.roda = function()
 #region estado_walk
 estado_walk.inicia = function()
 {
-	dir = (point_direction(0, 0, right - left, down - up ) div 90)
+	dir = (point_direction(0, 0, right - left, down - up ) div 90);
 	
 	//definindo a sprite
 	
 	//configurando a sprite
-	sprite_index = define_sprite(dir, spr_personagem_walk_side, spr_personagem_walk_front, spr_personagem_walk_back)
+	sprite_index = define_sprite(dir, spr_personagem_walk_side, spr_personagem_walk_front, spr_personagem_walk_back);
 	//começando a animação do começo
 	image_index = 0
 }
@@ -58,29 +58,27 @@ estado_walk.inicia = function()
 estado_walk.roda = function()
 {
 	
-	dir = (point_direction(0, 0, velh, velv) div 90)
+	dir = (point_direction(0, 0, velh, velv) div 90);
 	//condição para sair do	estado
 	//se eu estou parado eu vou para o estado de idle
 	
 	//ajustando o lado que ele olha
 	if (velh != 0)
 	{
-		image_xscale = sign(velh)
+		image_xscale = sign(velh);
 	}	
-	
+
 	//definindo a sprit
-	sprite_index = define_sprite(dir, spr_personagem_walk_side, spr_personagem_walk_front, spr_personagem_walk_back)
-	
+	sprite_index = define_sprite(dir, spr_personagem_walk_side, spr_personagem_walk_front, spr_personagem_walk_back);
 	
 	//movendo
-	velv = (down - up) * vel //o resultado da conta vai ser 0, 1 ou -1
-	velh = (right - left) * vel
-	
+	velv = (down - up) * vel; //o resultado da conta vai ser 0, 1 ou -1
+	velh = (right - left) * vel;
 	
 	
 	if (velv == 0 && velh == 0)
 	{
-		troca_estado(estado_idle)	
+		troca_estado(estado_idle);	
 	}
 	
 	//indo para o estado de attack
@@ -89,7 +87,6 @@ estado_walk.roda = function()
 		troca_estado(estado_attack)	
 	}
 	
-
 }
 
 

@@ -9,7 +9,10 @@ estado_move		= new estado();
 estado_attack	= new estado();
 estado_death	= new estado();
 estado_hurt		= new estado();
-estado_hunt		= new estado();
+
+// Definindo o Poise dos inimigos
+poise = poise_max;
+
 
 // iniciando estado idle por parão
 inicia_estado(estado_idle);

@@ -4,7 +4,7 @@
 event_inherited();
 
 //Desenhando a vida
-draw_text(x, y - sprite_height * 2, vida);
+draw_text(x, y - sprite_height * 2, poise);
 
 
 
